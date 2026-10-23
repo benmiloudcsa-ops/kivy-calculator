@@ -1,30 +1,31 @@
-
 [app]
 
-# (str) عنوان أو اسم التطبيق الذي سيظهر للمستخدم
-title = My Calculator
+# (str) Title of your application
+title = Calculator App
 
-# (str) اسم الحزمة (يجب أن يكون بالإنجليزية وبدون مسافات أو رموز خاصة)
-package.name = mycalculator
+# (str) Package name
+package.name = calcapp
 
-# (str) النطاق أو الدومين الخاص بالحزمة
+# (str) Package domain (needed for android/ios packaging)
 package.domain = org.calc
 
-# (list) الملفات المصدرية المضمنة في التطبيق
+# (str) Source code where the main.py live
+source.dir = .
+
+# (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas
 
-# (str) إصدار التطبيق
+# (str) Application version
 version = 0.1
 
-# (list) المكتبات والحزم البرمجية التي يعتمد عليها تطبيقك
+# (list) Application requirements
 requirements = python3,kivy
 
-# (str) اتجاه الشاشة (portrait للشاشة العمودية، landscape للأفقية)
+# (str) Supported orientation
 orientation = portrait
 
-# (list) الأذونات المطلوبة للتطبيق (إذا لزم الأمر)
+# (list) Permissions
 android.permissions = INTERNET
 
 [buildozer]
-# (int) مستوى تفاصيل سجل الأخطاء (0 إلى 2)
 log_level = 2
